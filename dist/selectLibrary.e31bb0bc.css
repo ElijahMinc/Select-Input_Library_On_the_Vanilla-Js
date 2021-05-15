@@ -1,0 +1,83 @@
+.app {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  width: 500px;
+}
+
+.select {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+.select.open .select__dropdown {
+  display: block;
+}
+.select.open .select__input {
+  border-bottom: none;
+}
+.select.open .select__backdrop {
+  display: block;
+}
+.select__input {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  height: 46px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.select__dropdown {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 46px;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.select__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.select__backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: transparent;
+}
+.select__item {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.select__item:hover {
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+  -webkit-transition: background-color 0.3s ease-in;
+  -moz-transition: background-color 0.3s ease-in;
+  -ms-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+}
+.select__item.selected {
+  background-color: bisque;
+}
+
+/*# sourceMappingURL=/selectLibrary.e31bb0bc.css.map */
